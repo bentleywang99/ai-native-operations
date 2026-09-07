@@ -26,8 +26,13 @@ Can a program reach the information the process needs, without a person fetching
 
 - **0** — Information lives in heads, in email threads, in scanned documents, or in a system
   nobody can get data out of.
-- **1** — Reachable but awkward: exports, a nightly file, one system that needs a human login.
+- **1** — Reachable but awkward: exports, a nightly file, one system that needs a human login,
+  or an interface that exists but must be requested from a vendor or IT and has been granted
+  before.
 - **2** — Available through an interface a program can call, at the moment it is needed.
+
+*Score 0 only when nobody has succeeded in getting the data out. Slow access is a 1; impossible
+access is a 0.*
 
 ## 3. Volume and repetition
 
@@ -49,6 +54,10 @@ What happens when the process gets one wrong?
 - **1** — Errors are recoverable but embarrassing or costly to fix.
 - **2** — Errors are cheap and reversible, and the process already produces some today.
 
+*Score the typical error, not the worst imaginable one. If most errors are cheap and a minority
+are irreversible, score 1 and name the minority: that is where a checkpoint goes. Score 0 only
+when the ordinary error is the expensive kind.*
+
 *A 0 here does not disqualify a process. It relocates the design toward approval checkpoints and
 raises the cost of the pilot. Be explicit about that trade rather than hiding it in a score.*
 
@@ -66,8 +75,10 @@ of judgment?
 
 Is there one person who can approve changing how this works?
 
-- **0** — Change requires a committee, or ownership is genuinely contested.
-- **1** — One owner, but significant changes need sign-off elsewhere.
+- **0** — Change requires a committee, or ownership is genuinely contested, or the owner is
+  leaving with no successor.
+- **1** — One owner, but significant changes need sign-off elsewhere, including a specialist's
+  sign-off on a subset of the rules.
 - **2** — One owner who can decide, and who is willing to be involved weekly.
 
 *Score this honestly even though it feels political. It is the single best predictor of whether
@@ -93,6 +104,10 @@ them a quarter and their appetite for trying again.
 **A single 0 on dimension 1 or 6 caps the verdict at Early**, regardless of total. You cannot
 automate a decision nobody can state, and you cannot ship a change nobody can approve. These two
 are preconditions rather than contributions, and the arithmetic must reflect that.
+
+**Take stated facts at face value.** If the owner states something that maps to an anchor, score
+the anchor. Discount a stated fact only when something else they said contradicts it, and say
+which.
 
 **Show the scores.** Every read-out names the six numbers and the total. A verdict a client
 cannot audit is an opinion wearing a uniform.

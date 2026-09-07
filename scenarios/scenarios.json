@@ -1,0 +1,205 @@
+{
+  "_readme": "Regression set for the readiness rubric (Handbook ch. 4). Each scenario is a fictional business with a scripted owner. `owner` is what the owner says turn by turn; the runner sends them in order and the consultant asks whatever it asks. `expected.scores` are the six dimensions in ch. 4 order (decision clarity, data accessibility, volume, error tolerance, existing structure, ownership), 0–2 each; `expected.band` follows the bands and the capping rule. Run: node method/run-scenarios.js [name].",
+  "scenarios": [
+    {
+      "name": "proposals-saas",
+      "summary": "40-person B2B SaaS; three AEs write 30 proposals a month by hand from HubSpot notes, an Excel price sheet, and old proposals in Drive; SE reviews every one.",
+      "owner": [
+        "We're a 40-person B2B software company. Our three account executives spend about two days a week each writing sales proposals by hand. I'm the VP of Sales and I own it.",
+        "About 30 proposals a month, 4 to 6 hours each. A solutions engineer reviews every one before it goes out; she catches wrong pricing maybe one time in five, and the rest is a rubber stamp.",
+        "Content comes from call notes in HubSpot, our pricing sheet in Excel, and old proposals in Google Drive. Nothing is connected, but all three are ours and I can export any of them today.",
+        "If a proposal goes out with a wrong number we just send a corrected version; it's embarrassing but not a legal problem. We tried ChatGPT for drafts; it didn't know our pricing so people stopped.",
+        "A great outcome is a solid first draft in 30 minutes with the right pricing, and the SE only looking at exceptions."
+      ],
+      "expected": {
+        "scores": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "total": 10,
+        "band": "Advanced"
+      },
+      "note": "Strong on every precondition; pricing rules are explicit (clarity 2). Data is exportable but disconnected (1). Accept Ready as a soft pass: clarity or structure scored 1 is defensible.",
+      "brief": "To be plain: I'm the VP of Sales and I can approve changing this process myself, no sign-off needed. Two AEs given the same call notes would land on the same package and price about 80 percent of the time because the price sheet has explicit tiers and discount rules. Data is in three systems we own and can export today. Mistakes are caught before sending or fixed with a corrected version. Nobody has automated any of it yet beyond a Drive folder of templates."
+    },
+    {
+      "name": "cpa-onboarding",
+      "summary": "12-person accounting firm; new-client onboarding takes three weeks of email back-and-forth collecting documents; no single owner.",
+      "owner": [
+        "We're a 12-person accounting firm. Onboarding a new client takes about three weeks of back-and-forth emails collecting documents. Nobody really owns it; whichever accountant landed the client chases them.",
+        "Maybe 8 to 10 new clients a month in season, 2 or 3 otherwise. The delay is mostly clients not sending things, and then us finding the package is incomplete and asking again.",
+        "The checklist of what we need lives in each partner's head; it differs by client type and by partner. Documents arrive by email and get dragged into a shared drive folder by hand.",
+        "If we onboard with a missing document we find out at filing time and scramble. Nobody has tried any AI tool on this.",
+        "Ideal would be the client getting one clear request, uploading once, and us knowing the package is complete without a person checking."
+      ],
+      "expected": {
+        "scores": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "total": 3,
+        "band": "Early"
+      },
+      "note": "Both capping dimensions are 0: no explicit checklist, no owner. Early regardless of anything else.",
+      "brief": "To be plain: there is no written checklist, two partners would ask for different documents, nobody owns onboarding and nobody could approve changing it without a partner meeting. Documents live in email and a shared drive with no structure."
+    },
+    {
+      "name": "mga-submissions",
+      "summary": "60-person MGA; 400 broker submissions a month arrive as PDFs and are keyed into the underwriting system by four staff; underwriting guidelines documented; head of ops owns it.",
+      "owner": [
+        "I run operations at a 60-person managing general agent in commercial property insurance. We get about 400 broker submissions a month as PDFs and emails, and four intake staff key them into our underwriting system.",
+        "Intake takes 20 to 40 minutes per submission. Our underwriting guidelines are written down, appetite rules and all; underwriters decline about 30 percent of what comes in for reasons that are in the guide.",
+        "The submissions are unstructured PDFs and ACORD forms; our underwriting system has an API and our loss-run vendor exports CSV. The data is messy but we own it and can pull it.",
+        "A keying error gets caught by the underwriter before a quote goes out, and a bad quote can be withdrawn before binding, so mistakes are recoverable. We tried an OCR tool two years ago; it handled maybe half the forms.",
+        "Great outcome: submissions triaged and keyed within an hour, declines routed automatically with the guideline cited, underwriters only seeing what's in appetite."
+      ],
+      "expected": {
+        "scores": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "total": 11,
+        "band": "Advanced"
+      },
+      "note": "Textbook Advanced: written rules, high volume, reversible errors, owner, structure. Data is 1 because inputs are unstructured PDFs.",
+      "brief": "To be plain: I own intake and can approve a redesign myself. The underwriting guide is written and two underwriters would decline the same submission for the same reasons. Data is ours: PDFs and ACORD forms in, an underwriting system with an API, loss runs as CSV. Errors are caught before quoting and quotes can be withdrawn before binding. Intake already has a documented step list and a queue."
+    },
+    {
+      "name": "solo-coach",
+      "summary": "One-person executive coaching practice; wants to automate matching new inquiries to packages; three inquiries a month; decisions are intuition.",
+      "owner": [
+        "I'm an executive coach, just me. I'd like AI to handle the first conversation with new inquiries and figure out which package fits them, so I only talk to the right people.",
+        "I get maybe three inquiries a month. Which package fits is a gut call; it depends on chemistry, honestly, and I sometimes make one up on the spot.",
+        "Inquiries come through my website form and LinkedIn messages. I keep notes in Apple Notes.",
+        "If I pitch the wrong package the person just says no, so nothing terrible happens. I've used ChatGPT to draft replies and it was fine.",
+        "I'd love to spend zero time on inquiries that won't convert."
+      ],
+      "expected": {
+        "scores": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        "total": 4,
+        "band": "Early"
+      },
+      "note": "Decision clarity 0 caps at Early; volume is trivial, so the redesign would not pay back anyway. Ownership is clear (it is her).",
+      "brief": "To be plain: it's just me, so I own it and can change anything. But which package fits is a gut call, I couldn't write the rule down, and I get three inquiries a month. Notes are in Apple Notes and my inbox. A wrong pitch costs nothing."
+    },
+    {
+      "name": "freight-checkcalls",
+      "summary": "25-person freight brokerage; 600 loads a month; dispatchers make carrier check calls and update the TMS by hand; process documented; ops manager owns it.",
+      "owner": [
+        "I'm the operations manager at a 25-person freight brokerage. We move about 600 loads a month, and our five dispatchers spend most of the day making check calls to carriers and typing the status into our TMS.",
+        "Each load gets three or four check calls. The script is documented: what to ask, what counts as late, when to escalate to the customer. The TMS has an API and the carriers mostly text or call back.",
+        "If a status update is wrong we catch it at delivery or the customer calls; it's fixable, but a late-notice miss can cost us a customer relationship, so we'd want a person to see anything flagged late.",
+        "We piloted a vendor's AI check-call agent last year on 50 loads. It worked on about 70 percent; the rest needed a human. We stopped because it wasn't integrated with our TMS.",
+        "Great outcome: humans only handle exceptions and late loads, and our dispatchers cover twice the volume."
+      ],
+      "expected": {
+        "scores": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "total": 11,
+        "band": "Advanced"
+      },
+      "note": "Error tolerance 1: most errors are fixable, late-notice misses are the costly minority and get the checkpoint.",
+      "brief": "To be plain: I own dispatch and can approve this myself. The check-call script and escalation rules are written down and two dispatchers would handle a late load the same way. The TMS has an API, carrier contact data is in it, and status history is exportable. A missed late notice can cost a customer, so anything flagged late must be seen by a person; other errors are fixable. The process already has a step list, a queue, and last year's pilot data."
+    },
+    {
+      "name": "clinic-scheduling",
+      "summary": "Three-location physical therapy clinic; front desk schedules and reschedules by phone; 900 appointments a month; rules exist but vary by location; office manager owns it; clinical safety constraints.",
+      "owner": [
+        "I'm the office manager for a physical therapy clinic with three locations. Our front desk staff spend hours a day on the phone scheduling and rescheduling, about 900 appointments a month.",
+        "There are scheduling rules, but each location does it a bit differently, and some cases need a clinician's judgment, like whether a post-surgery patient can wait another week.",
+        "Our EHR has an API but our IT vendor controls access and takes weeks. Patient records are sensitive; we're covered by HIPAA.",
+        "A wrong booking is usually just an annoyed patient, but booking a post-op patient too late could actually harm them, so anything clinical must be checked by a person.",
+        "Nobody has tried AI here. Ideal is patients self-scheduling routine visits by text and staff only handling the complicated ones."
+      ],
+      "expected": {
+        "scores": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "total": 7,
+        "band": "Ready"
+      },
+      "note": "Ready with checkpoints: rules exist but vary; clinical cases need a human (error 1); vendor-gated EHR access is slow not impossible (data 1); office manager owns it but clinicians sign off on clinical rules (ownership 1).",
+      "brief": "To be plain: I'm the office manager and I can approve changes to scheduling, though clinicians must sign off on the clinical rules. Rules exist in writing per location but differ between locations, and post-surgical cases need clinician judgment. The EHR has an API but our IT vendor gates access and takes weeks. Routine booking errors are fixable; clinical timing errors can harm, so those need a human check. Each location has a written scheduling procedure."
+    },
+    {
+      "name": "agency-reporting",
+      "summary": "18-person marketing agency; monthly client performance reports assembled by hand from five ad platforms; 40 clients; format standard; account director owns it.",
+      "owner": [
+        "I'm the account director at an 18-person marketing agency. Every month our account managers build a performance report for each of our 40 clients by hand, pulling numbers from Google Ads, Meta, LinkedIn, GA4, and our CRM.",
+        "Each report takes about three hours. The format is standard, we have a template, and what goes in it is defined per client in our onboarding doc.",
+        "All five platforms have APIs and we already have a Looker Studio connector for two of them. The commentary paragraph is the only part that needs judgment.",
+        "A wrong number in a report is caught by the client sometimes, which is embarrassing but fixable; we've never lost a client over it. We use ChatGPT to draft the commentary already.",
+        "Great outcome: reports assembled automatically on the first of the month, account managers write two sentences of commentary and hit send."
+      ],
+      "expected": {
+        "scores": [
+          2,
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        "total": 10,
+        "band": "Advanced"
+      },
+      "note": "Ceiling-ish case: 40 reports a month is 'weekly to daily' (volume 1), errors embarrassing (1). Total 10 keeps it Advanced; accept Ready as a soft pass because 9 vs 10 is one judgment call.",
+      "brief": "To be plain: I'm the account director, I own client reporting and can approve changing it myself. What goes into each report is defined per client in the onboarding doc and the template is standard; two account managers would build the same report. All five platforms have APIs and two are already connected. A wrong number is embarrassing but fixable. The process has a documented monthly checklist and partial automation already."
+    },
+    {
+      "name": "nonprofit-grants",
+      "summary": "9-person nonprofit; grant applications written by the executive director; 15 a year; each unique; funder data in scattered PDFs; ED owns it but is leaving in two months.",
+      "owner": [
+        "I'm the executive director of a 9-person nonprofit. I write most of our grant applications myself, about 15 a year, and each one is different. I'm leaving in two months and there's no successor yet.",
+        "There's no template; each funder wants something different. Our program data is in a mix of spreadsheets and PDF reports; it takes me a day to assemble the numbers for each application.",
+        "If we submit a weak application we just don't get the grant; there's no way to undo a submission but the downside is a missed opportunity, not harm.",
+        "Our program director used ChatGPT to draft a section once and the board didn't like the tone.",
+        "Ideal would be a strong first draft for each funder from our program data in an afternoon."
+      ],
+      "expected": {
+        "scores": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "total": 2,
+        "band": "Early"
+      },
+      "note": "Ownership 0 (owner leaving, no successor) caps at Early; volume is low and each item unique.",
+      "brief": "To be plain: I own grant writing but I'm leaving in two months with no successor, so nobody will own it. Each funder is different and there's no template or written rule for what to say. Program data is scattered across spreadsheets and PDFs. A weak application just misses the grant. Nothing is documented as a process."
+    }
+  ]
+}
