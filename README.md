@@ -46,8 +46,8 @@ our own, including the parts that did not work.
 
 ## Status
 
-Version 0.1, first published 6 September 2026. Chapters marked *draft* are outlines being
-filled in; chapters without the marker have been through at least one revision pass.
+Version 0.2, 9 September 2026 (first published 6 September 2026). All eleven chapters are
+written; Chapter 11 is rewritten at each monthly review with the company's real numbers.
 
 This is a live document. It will be wrong in places, and the fastest way to find out is to use
 it on real businesses. Corrections are welcome: open an issue.
