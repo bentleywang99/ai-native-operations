@@ -14,7 +14,7 @@ the incorporation papers when the company forms. Everything else, from writing t
 answering the inbox to deciding who gets a sales email, is done by the agent.
 
 It was started on 2 September 2026. It sells two things that share nothing but a codebase: a
-free playing-card reading with paid tiers, and an AI-native operations assessment for firms of
+free playing-card reading with paid tiers, and an AI-run operations assessment for firms of
 roughly twenty to five hundred people, which is the subject of this book.
 
 ## The operating model

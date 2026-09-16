@@ -2,7 +2,7 @@
 
 The most common way an AI initiative dies is being aimed at something too big to finish.
 
-"Make sales AI-native" is not a project. It is a slogan with a budget attached. It has no
+"Make sales AI-run" is not a project. It is a slogan with a budget attached. It has no
 owner who can approve the whole thing, no single measurement that says whether it worked, and
 no end. Twelve months later there is a steering committee, a vendor, a pilot in three regions,
 and no process anyone can point at that runs differently than it did before.

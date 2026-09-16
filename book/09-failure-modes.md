@@ -1,6 +1,6 @@
 # 9. Failure modes
 
-This is a catalogue of the ways an AI-native process fails, written from our own incidents in
+This is a catalogue of the ways an AI-run process fails, written from our own incidents in
 the first week of running one rather than from imagination. Each entry has the shape of the
 failure, the case where we met it, and the design that now prevents it. The general lesson
 comes first because it recurs in every entry: the failure is almost never the model being

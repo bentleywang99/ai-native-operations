@@ -4,7 +4,7 @@ The phrase "human in the loop" is used to mean everything and therefore means no
 said in board meetings to make an AI plan sound safe, without anyone specifying which human,
 looking at what, with what authority, and how often.
 
-An AI-native process needs the specific version. A **checkpoint** is a named place where a named
+An AI-run process needs the specific version. A **checkpoint** is a named place where a named
 person sees a defined thing and can do something about it. Everything else is decoration.
 
 ## Put checkpoints where consequences are

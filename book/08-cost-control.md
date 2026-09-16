@@ -2,7 +2,7 @@
 
 An agent's cost is not a licence fee. It is a meter that runs every time the agent thinks, and
 the meter is attached to a thing that can be asked to think by anyone on the internet. Cost
-control in an AI-native process is therefore two problems: knowing what a unit of work costs,
+control in an AI-run process is therefore two problems: knowing what a unit of work costs,
 and making sure nobody can run the meter without producing a unit of work.
 
 The numbers in this chapter are StackNative's own, measured in the first week of September 2026

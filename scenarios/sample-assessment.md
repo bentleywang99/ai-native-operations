@@ -1,8 +1,8 @@
-# Sample AI-native readiness assessment
+# Sample AI-run readiness assessment
 
 **Client:** a managing general agent in commercial property insurance, 60 people, United States.
 **Process assessed:** broker submission intake.
-**Prepared by:** StackNative, 7 September 2026. Method: The AI-Native Operations Handbook v0.1, chapters 3 to 6.
+**Prepared by:** StackNative, 7 September 2026. Method: The AI-Run Company (then titled The AI-Native Operations Handbook) v0.1, chapters 3 to 6.
 
 *This is a published example of the $2,500 deliverable. The business is a composite built from
 our regression scenarios, not a client, and its figures are illustrative. The structure, the
