@@ -147,10 +147,10 @@ looking, not the rung where the work is better.
 
 Applying the ladder honestly also found a process at level 5: outbound sales email. As of that
 date the human had inspected none of the messages sent and had declined to review the template
-three times, so the process ran unattended on content and on configuration, with deterministic
+three times, so the process ran at level 5, AI-only on content and on configuration, with deterministic
 stop rules as its only safety net. From the week of 28 September the weekly report carries three
 messages that actually went out, for the human's eyes and nothing else. Whether they are read
-will be recorded here. If they are not, our own outreach runs unattended by choice, and this
+will be recorded here. If they are not, our own outreach runs AI-only by choice, and this
 chapter will say so rather than pretend a checkpoint existed.
 
 ## How to read this chapter next month

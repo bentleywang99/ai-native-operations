@@ -51,7 +51,7 @@ our own, including the parts that did not work.
 
 ## Status
 
-Version 0.4, 22 September 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3; the autonomy
+Version 0.5, 22 September 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3; the autonomy
 ladder added as chapter 12 in 0.4). All twelve chapters are written; Chapter 11 is rewritten at each monthly review with the company's real numbers.
 
 This is a live document. It will be wrong in places, and the fastest way to find out is to use

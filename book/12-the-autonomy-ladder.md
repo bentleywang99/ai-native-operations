@@ -18,7 +18,7 @@ an assessor can see, so the ladder is usable in an assessment rather than a diag
 | 2 | **AI-native** | The human initiates and does the work, and consults the agent before shipping. |
 | 3 | **AI-first** | The agent initiates the work; a human reviews it before it ships. |
 | 4 | **AI-run** | The agent ships on its own; a human samples the output periodically. |
-| 5 | **AI-unattended** | The agent ships; there is no routine human review. |
+| 5 | **AI-only** | The agent ships; there is no routine human review. |
 
 The ladder runs from human-run at the bottom to AI-run at level 4, and the handoff between
 those two is the whole story of this book. Level 5 sits past the end of it on purpose.
@@ -44,12 +44,26 @@ level 4 by this ladder's own definitions. Level 5 is what you get when you remov
 checkpoint. Naming our own method after the rung that lacks its own safeguard would point at
 the thing we tell clients not to do.
 
-**Why the top rung is named for what is missing.** Between level 4 and level 5, what stops is
-attention, not ownership. Chapter 2 makes a named owner, a person who can approve a change to
-the process and who answers for it, a precondition for the process existing at all. At level 5
-that person still exists; they have simply stopped looking routinely. The label says so. It is
-also the word that belongs in an incident review: "the process was unattended" describes the
-situation and points at the fix.
+**On the label at the top.** Every rung here is named for who does the work, not for whether
+we approve of it. Level 5 gets the same treatment. An earlier draft called it *AI-unattended*,
+which was accurate but editorial: it smuggled the recommendation into the noun, and a taxonomy
+whose top rung sounds like a warning stops being a measuring instrument. The opposite temptation
+is worse. A top rung named to inspire would quietly contradict the central claim of this
+chapter, that the target is the right rung rather than the highest one, and would push processes
+past where consequence says they should sit. So the label is plain and the judgement lives in
+the prose, where a reader can argue with it.
+
+What changes between level 4 and level 5 is attention, not ownership. Chapter 2 makes a named
+owner, a person who can approve a change to the process and who answers for it, a precondition
+for the process existing at all. At level 5 that person still exists; they have simply stopped
+looking routinely. Ownership never moves, at any rung, which is why no rung is named for it.
+
+**What level 5 looks like when it is right.** A process that belongs at level 5 is high volume,
+cheap to reverse, and narrow in blast radius, and at that point the numbers get genuinely
+striking: thousands of units a day, cost measured in fractions of a cent each, no queue, and a
+cycle time short enough that the old process is no longer a useful comparison. That is worth
+aspiring to for the processes that qualify. The aspiration belongs to the evidence, not to the
+name.
 
 ## Processes nest, and a rung is set at the boundary
 
