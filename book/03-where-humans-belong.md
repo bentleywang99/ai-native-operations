@@ -41,6 +41,13 @@ the workhorse.
 only way to catch quiet degradation, because quiet degradation by definition does not trigger
 anything. If you have one checkpoint and the process is reversible, make it this one.
 
+Monitoring is not sampling. A dashboard shows you what turns up in the numbers: volume, error
+counts, cost, latency. It cannot show you the unit of work that was technically fine and quietly
+wrong, because that unit produced no number. A good many firms point at a dashboard and believe
+they have a checkpoint. They have a smoke alarm, which is worth having, and it is not the same
+thing as someone reading three of the letters that went out. On the autonomy ladder in chapter
+12, a process with a dashboard and no sampling sits at level 5, whatever its owners believe.
+
 **Exception handling.** The system stops and hands over when it cannot proceed. Not really a
 quality control, but it must be designed anyway, or the work silently piles up.
 

@@ -6,6 +6,12 @@ is a score, not an impression, and the person receiving it is entitled to see th
 
 Six dimensions, scored 0, 1, or 2. Twelve points available.
 
+This rubric and the autonomy ladder in chapter 12 measure different things, and a client needs
+both. The rubric asks whether *one process* is ready to be redesigned now. The ladder asks how
+much of the work an organisation has *actually delegated*, rung by rung. A firm can be Advanced
+here on one process while sitting at level 1 overall; the rubric says where to start, the
+ladder says how far you have come and which rung each process belongs on.
+
 ## 1. Decision clarity
 
 Can someone write down what a good outcome looks like, precisely enough that two experienced

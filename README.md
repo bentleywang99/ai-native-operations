@@ -46,10 +46,13 @@ our own, including the parts that did not work.
 **Part V — The Evidence**
 11. [StackNative as the case study](book/11-case-study.md)
 
+**Part VI — The Ladder**
+12. [The autonomy ladder: six rungs, and which one you are on](book/12-the-autonomy-ladder.md)
+
 ## Status
 
-Version 0.3, 16 September 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3). All eleven chapters are
-written; Chapter 11 is rewritten at each monthly review with the company's real numbers.
+Version 0.4, 22 September 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3; the autonomy
+ladder added as chapter 12 in 0.4). All twelve chapters are written; Chapter 11 is rewritten at each monthly review with the company's real numbers.
 
 This is a live document. It will be wrong in places, and the fastest way to find out is to use
 it on real businesses. Corrections are welcome: open an issue.

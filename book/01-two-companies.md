@@ -69,6 +69,12 @@ checkpoints, with the information and the authority to stop it. Chapter 3 define
 checkpoints. Where this book quotes the market's "AI-native", it means AI-enabled, and we say
 so.
 
+Chapter 12 places both words on a six-rung autonomy ladder, and they land on the same rung:
+level 2, where the human still initiates and does the work and consults the AI before shipping.
+Two names, one rung, both describing a company where a person touches every unit of work. That
+coincidence is the whole reason we stopped using either one for ourselves. AI-run is level 4 on
+that ladder: the agent ships on its own and a human samples the output.
+
 ## "Agentic enterprise", and what is left when you take the product out
 
 A related phrase arrived with a vendor attached. "Agentic enterprise" describes a company whose

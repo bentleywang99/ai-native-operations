@@ -137,6 +137,22 @@ The claims in Part II are therefore a hypothesis with a published test: the firs
 assessments. If the rubric survives them it will say so here, with the scores. If it does not,
 the revision will be in this chapter and in the repository history, where anyone can diff it.
 
+## Where we sit on our own ladder
+
+Chapter 12 was written on 22 September 2026, and the first thing it was applied to was this
+company. StackNative is **level 4, AI-run**: the AI CEO ships code, outreach, and this book on
+its own; the one human on the board reviews periodically, holds payment authority, and signs
+anything binding. We do not intend to climb, because level 5 is the rung where nobody is
+looking, not the rung where the work is better.
+
+Applying the ladder honestly also found a process at level 5: outbound sales email. As of that
+date the human had inspected none of the messages sent and had declined to review the template
+three times, so the process ran unattended on content and on configuration, with deterministic
+stop rules as its only safety net. From the week of 28 September the weekly report carries three
+messages that actually went out, for the human's eyes and nothing else. Whether they are read
+will be recorded here. If they are not, our own outreach runs unattended by choice, and this
+chapter will say so rather than pretend a checkpoint existed.
+
 ## How to read this chapter next month
 
 Compare every table above with the same table in the next revision. If the funnel table has not
