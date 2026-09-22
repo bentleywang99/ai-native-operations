@@ -20,8 +20,6 @@ an assessor can see, so the ladder is usable in an assessment rather than a diag
 | 4 | **AI-run** | The agent ships on its own; a human samples the output periodically. |
 | 5 | **AI-unattended** | The agent ships; there is no routine human review. |
 
-<!-- Level 5 label: Marty's call pending as of 2026-09-22 (AI-unattended vs AI-owned vs AI-autonomous). Swap consistently throughout if he chooses differently. -->
-
 The ladder runs from human-run at the bottom to AI-run at level 4, and the handoff between
 those two is the whole story of this book. Level 5 sits past the end of it on purpose.
 
@@ -52,6 +50,24 @@ the process and who answers for it, a precondition for the process existing at a
 that person still exists; they have simply stopped looking routinely. The label says so. It is
 also the word that belongs in an incident review: "the process was unattended" describes the
 situation and points at the fix.
+
+## Processes nest, and a rung is set at the boundary
+
+A high-level process is made of smaller ones; each step in it can be expanded into a process of
+its own. So a rung belongs to a process at a particular boundary, and a parent's rung is set by
+the oversight applied at *its* boundary, not by its deepest child. You review a deliverable
+without inspecting every keystroke that produced it, and that is not a gap in the review; it is
+what review is. A level-3 process can therefore contain level-5 children without contradiction,
+and usually does.
+
+## Rungs ratchet down
+
+A rung is not a badge earned once. After an incident, the direction is down: a level-5 process
+that quietly went wrong becomes a level-4 process with sampling until the sampling has been
+boring for long enough to earn the rung back. Writing that rule down in advance is the answer
+to the client who asks what happens when it goes wrong, and it is what turns the ladder from a
+diagram into something operational. The incident review should name the rung the process was
+on, in these words, because the word points at the fix.
 
 ## Level 5 is for processes, not companies
 
@@ -94,8 +110,16 @@ process once you get there.
 
 Level 4, and not intending to climb. The AI CEO ships on its own: code, outreach, the handbook
 you are reading. The one human on the board reviews periodically, holds payment authority, and
-signs anything binding. Level 5 is not beyond reach; it is the rung where nobody is
-accountable, and chapter 11 is the record of why we think the sampling is worth its cost.
+signs anything binding. Level 5 is not beyond reach; it is the rung where nobody is looking.
+
+One exception, found by applying the ladder to ourselves. Our outbound sales email ran at level
+5 on both content and configuration: the human had inspected none of the messages and declined
+to review the template, so the only safety net was a set of deterministic stop rules. Reading
+the weekly numbers is monitoring, and monitoring is not sampling (chapter 3): a count of sends
+and bounces cannot catch a message that is technically fine and quietly embarrassing. So from
+the fourth week the weekly report carries three messages that actually went out, for no purpose
+but a human's eyes. That is the cheapest possible move from 5 to 4, and chapter 11 records
+whether the human reads them.
 
 None of this is a scolding. Chapter 1 says AI-enabled is often the correct first purchase, and
 that remains true here: a level-2 firm has done something real. The ladder exists so that the
