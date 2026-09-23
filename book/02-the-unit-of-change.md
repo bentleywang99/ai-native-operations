@@ -1,3 +1,5 @@
+*[The AI-Run Company](https://handbook.stacknative.ai) · contents*
+
 # 2. The unit of change is a process, not a department
 
 The most common way an AI initiative dies is being aimed at something too big to finish.
@@ -54,3 +56,7 @@ Pick the second process because the first one taught you something, not because 
 a list. In practice the second is usually adjacent: the step immediately upstream or downstream,
 where you now control both sides of a handoff. That is where the compounding starts, and it is
 the honest reason to do one at a time rather than five in parallel.
+
+---
+
+*This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues)*

@@ -1,3 +1,5 @@
+*[The AI-Run Company](https://handbook.stacknative.ai) · contents*
+
 # 11. StackNative as the case study
 
 This is the chapter that cannot be faked, and the reason to keep it honest is that it is the
@@ -159,3 +161,7 @@ Compare every table above with the same table in the next revision. If the funne
 moved, the promotion plan has failed and the book should say so. If the cost table has moved
 against us, Chapter 8 was optimistic. If the failure list has stopped growing, either the system
 has become quiet or we have stopped looking; assume the second until proven otherwise.
+
+---
+
+*This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues)*

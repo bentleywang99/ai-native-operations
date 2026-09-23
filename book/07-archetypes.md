@@ -1,3 +1,5 @@
+*[The AI-Run Company](https://handbook.stacknative.ai) · contents*
+
 # 7. Process archetypes and their redesigns
 
 Most business processes that are worth redesigning are one of six shapes, or two or three of
@@ -157,3 +159,7 @@ It does not say which archetypes are worth redesigning. That is Chapter 4's job,
 that is a perfect example of an archetype can still score Early if nobody owns it or the rule
 lives in one person's head. The archetype tells you what the target state looks like; the rubric
 tells you whether to build it yet.
+
+---
+
+*This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues)*

@@ -1,3 +1,5 @@
+*[The AI-Run Company](https://handbook.stacknative.ai) · contents*
+
 # 4. The readiness rubric
 
 This chapter is the standard. When StackNative's consultant tells someone their process is
@@ -117,3 +119,7 @@ which.
 
 **Show the scores.** Every read-out names the six numbers and the total. A verdict a client
 cannot audit is an opinion wearing a uniform.
+
+---
+
+*This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues)*

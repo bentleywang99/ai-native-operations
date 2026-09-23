@@ -1,3 +1,5 @@
+*[The AI-Run Company](https://handbook.stacknative.ai) · contents*
+
 # 6. Designing the target state
 
 The target state is the redesigned process: which steps agents do, where the checkpoints sit,
@@ -111,3 +113,7 @@ with a real name in the "who" field and a real action in "if no response".
 The target state in an assessment is one page: the step table, the checkpoint table, and the
 four measurements. The owner named in the scope should be able to read it in ten minutes and say
 which steps they disagree with. If they cannot, it is written for us, not for them.
+
+---
+
+*This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues)*
