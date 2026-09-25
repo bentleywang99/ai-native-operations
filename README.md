@@ -11,6 +11,10 @@ to redesign a process around what AI can actually do, and then run it with a hum
 It was published as *The AI-Native Operations Handbook* until version 0.3; chapter 1 explains
 why the label changed and the idea did not.
 
+The services this book describes are open and free during our beta: a [readiness read-out on one
+of your processes](https://stacknative.ai/consulting/), scored against the rubric in Part II, and
+[card readings](https://stacknative.ai/readings/). No signup for either.
+
 It exists for two reasons.
 
 **It is the authoritative source behind StackNative's AI-run consulting.** Every readiness

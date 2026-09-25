@@ -100,4 +100,4 @@ what the first pilot actually cost, which is the number this chapter is missing.
 
 ---
 
-*This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues)*
+*This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues) · [try the free read-out](https://stacknative.ai/consulting/)*
