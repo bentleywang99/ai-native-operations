@@ -10,8 +10,9 @@ scoring, and the cost model are exactly what a paying client receives; a real as
 only in being grounded in that client's artifacts (ten past cases and one data export) and in
 carrying their real volumes and costs.*
 
-*A second published example, [a process that scores Early](sample-assessment-not-ready.html),
-shows what we send when the answer is "not yet".*
+*Two more published examples: [a process that scores Early](sample-assessment-not-ready.html),
+which is what we send when the answer is "not yet", and [one that scores Ready](sample-assessment-ready.html),
+where the checkpoints carry the design.*
 
 ---
 

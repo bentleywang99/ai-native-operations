@@ -8,8 +8,8 @@
 business is a composite built from our regression scenarios, not a client, and its figures are
 illustrative. We publish it because most processes are in this band, and an assessment that only
 ever says "yes, build it" is a sales document rather than a standard. The other published
-example, [a submission intake process that scores Advanced](sample-assessment.html), shows the
-opposite end.*
+examples show the rest of the scale: [a clinic's scheduling that scores Ready](sample-assessment-ready.html)
+and [a submission intake that scores Advanced](sample-assessment.html).*
 
 ---
 

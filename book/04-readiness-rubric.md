@@ -100,13 +100,14 @@ the work finishes, and it is the dimension that no amount of good technology com
 | 6–9 | **Ready** | Redesign this process now, on its own, with checkpoints placed by Chapter 3. This is the band where a pilot pays back inside a quarter. |
 | 10–12 | **Advanced** | The preconditions are strong and something is probably already partly automated. The work here is depth and scale: instrumentation, cost control, removing the remaining human steps that exist out of habit rather than consequence. |
 
-## Two worked examples
+## Three worked examples, one per band
 
-The rubric applied end to end, on real-shaped processes: [a submission intake that scores
-Advanced](../scenarios/sample-assessment.html) and [a new-client onboarding that scores
-Early](../scenarios/sample-assessment-not-ready.html). The second is the more useful one to read
-first, because most processes are in that band and the advice there is to fix preconditions
-rather than to build anything.
+The rubric applied end to end, on real-shaped processes: [a new-client onboarding that scores
+Early](../scenarios/sample-assessment-not-ready.html), [a clinic's scheduling that scores
+Ready](../scenarios/sample-assessment-ready.html), and [a submission intake that scores
+Advanced](../scenarios/sample-assessment.html). Read the Early one first, because most processes
+are in that band and the advice there is to fix preconditions rather than to build anything. The
+Ready one is where the checkpoint design from chapter 3 does its real work.
 
 ## Rules for scoring
 
