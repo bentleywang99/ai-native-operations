@@ -45,6 +45,12 @@ function parseReadout(text) {
       history.push({ role: 'user', content: (sc.brief ? sc.brief + ' ' : '') + 'That is everything I know. Please give me the read-out now.' }); turns++;
       const r = await reply({ messages: history }); cost += r.cost; out = r.text; history.push({ role: 'assistant', content: r.text });
     }
+    // AI disclosure (2026-09-27): "Bentley" reads like a person's name, so the first reply must
+    // say plainly that it is an AI. Checked here because it is a standard we publish, not a
+    // preference, and a prompt edit can silently drop it.
+    const firstReply = (history.find((m) => m.role === 'assistant') || {}).content || '';
+    const opening = (firstReply.split(/(?<=[.!?])\s/)[0] || '');
+    const discloses = /\b(?:i'?m|i am)\s+(?:bentley[,;]?\s+)?an?\s+ai\b|\ban ai\b|\bthe ai\b/i.test(opening);
     const p = parseReadout(out);
     const bandOk = p.band && p.band.toLowerCase() === sc.expected.band.toLowerCase();
     const soft = sc.note && /accept (\w+) as a soft pass/i.exec(sc.note);
@@ -52,12 +58,23 @@ function parseReadout(text) {
     const drift = p.scores.every((x) => x !== null) ? Math.abs(p.scores.reduce((a, b) => a + b, 0) - sc.expected.total) : null;
     const status = bandOk ? 'PASS' : softOk ? 'SOFT' : 'FAIL';
     if (status === 'FAIL') fails++;
-    rows.push({ name: sc.name, status, expected: sc.expected.band, got: p.band, scores: p.scores.map((x) => x ?? '?').join(''), expScores: sc.expected.scores.join(''), drift, turns });
+    rows.push({ name: sc.name, status, discloses, expected: sc.expected.band, got: p.band, scores: p.scores.map((x) => x ?? '?').join(''), expScores: sc.expected.scores.join(''), drift, turns });
     fs.mkdirSync(path.join(__dirname, '..', 'scenarios', 'runs'), { recursive: true });
     fs.writeFileSync(path.join(__dirname, '..', 'scenarios', 'runs', `${sc.name}.last.md`), `# ${sc.name}\n\n${history.map((m) => `**${m.role}:** ${m.content}`).join('\n\n')}\n`);
   }
   console.log('scenario              status  expected   got        scores(exp)  drift turns');
   for (const r of rows) console.log(`${r.name.padEnd(22)}${r.status.padEnd(8)}${r.expected.padEnd(11)}${String(r.got).padEnd(11)}${r.scores}(${r.expScores})   ${String(r.drift ?? '?').padEnd(5)} ${r.turns}`);
-  console.log(`\n${rows.length - fails}/${rows.length} passed, cost $${cost.toFixed(3)}. Transcripts in scenarios/runs/.`);
+  const disc = rows.filter((r) => r.discloses).length;
+  console.log(`\n${rows.length - fails}/${rows.length} passed, AI disclosed in the opening sentence ${disc}/${rows.length}, cost $${cost.toFixed(3)}. Transcripts in scenarios/runs/ (untracked).`);
+  // scenarios/runs/ is gitignored, so without this the suite has no memory: every run overwrites
+  // the last and "did that prompt edit change anything?" becomes unanswerable. One row per run.
+  if (!only.length) {
+    const version = require('child_process').execSync('git rev-parse --short HEAD', { cwd: __dirname }).toString().trim();
+    const line = `| ${new Date().toISOString().slice(0, 16).replace('T', ' ')} | ${version} | ${rows.length - fails}/${rows.length} | ${disc}/${rows.length} | $${cost.toFixed(3)} | ${rows.map((r) => `${r.name.split('-')[0]}:${r.status === 'PASS' ? r.got : r.status + '→' + r.got}`).join(', ')} |\n`;
+    const log = path.join(__dirname, '..', 'scenarios', 'results.md');
+    if (!fs.existsSync(log)) fs.writeFileSync(log, `# Regression results, one row per full run\n\nTranscripts are not kept (scenarios/runs/ is gitignored); this is the record.\nThe suite is non-deterministic: a single FAIL is worth re-running before believing.\n\n| when (UTC) | book | bands | AI disclosed | cost | per scenario |\n|---|---|---|---|---|---|\n`);
+    fs.appendFileSync(log, line);
+    console.log(`Recorded in scenarios/results.md`);
+  }
   process.exit(fails ? 1 : 0);
 })().catch((e) => { console.error(e); process.exit(2); });
