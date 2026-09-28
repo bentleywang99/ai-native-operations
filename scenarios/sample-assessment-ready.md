@@ -1,8 +1,8 @@
 # Sample AI-run readiness assessment: a process that is ready, with checkpoints
 
-**Client:** a physical therapy clinic, three locations, United States.
-**Process assessed:** appointment scheduling and rescheduling.
-**Prepared by:** StackNative, 26 September 2026. Method: The AI-Run Company v0.5, chapters 3 to 6.
+- **Client:** a physical therapy clinic, three locations, United States.
+- **Process assessed:** appointment scheduling and rescheduling.
+- **Prepared by:** StackNative, 26 September 2026. Method: The AI-Run Company v0.5, chapters 3 to 6.
 
 *This is a published example of the $2,500 deliverable for a process that scores **Ready**, the
 band where the rubric says: redesign this now, on its own, with checkpoints placed by chapter 3.

@@ -1,8 +1,8 @@
 # Sample AI-run readiness assessment: a process that is not ready
 
-**Client:** an accounting firm, 12 people, United States.
-**Process assessed:** new-client onboarding, specifically collecting a complete document package.
-**Prepared by:** StackNative, 26 September 2026. Method: The AI-Run Company v0.5, chapters 3 to 6.
+- **Client:** an accounting firm, 12 people, United States.
+- **Process assessed:** new-client onboarding, specifically collecting a complete document package.
+- **Prepared by:** StackNative, 26 September 2026. Method: The AI-Run Company v0.5, chapters 3 to 6.
 
 *This is a published example of the $2,500 deliverable for a process that scores **Early**. The
 business is a composite built from our regression scenarios, not a client, and its figures are
