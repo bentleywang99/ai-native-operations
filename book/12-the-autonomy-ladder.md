@@ -27,6 +27,15 @@ those two is the whole story of this book. Level 5 sits past the end of it on pu
 
 ## Where the names came from, and one honest admission
 
+**The ladder is the language the market says it lacks.** Julie Bedard, a partner at Boston
+Consulting Group, told [WIRED, 28 September 2026](https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/) that when AI arrived at work "people didn't have language for it.
+Is it a tool? Is it a teammate? Is it a colleague? Is it a coworker?" Those are questions about
+what the agent *is*, and they have no stable answer, because the same agent is a tool in one
+process and the whole workforce in another. The ladder asks a question that does have an
+answer: what rung does *this process* sit on, and who touches each unit of work. A company can
+be at level 2 in sales and level 5 in invoice matching on the same afternoon, and the vocabulary
+should be able to say so.
+
 **AI-native at level 2 is the market's usage, not ours.** As the term is currently used, an
 AI-native company is one built with AI everywhere from the start, where humans still do the
 work and check with the AI before shipping. Chapter 1 calls that same rung **AI-enabled**. Two

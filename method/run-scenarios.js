@@ -49,8 +49,9 @@ function parseReadout(text) {
     // say plainly that it is an AI. Checked here because it is a standard we publish, not a
     // preference, and a prompt edit can silently drop it.
     const firstReply = (history.find((m) => m.role === 'assistant') || {}).content || '';
-    const opening = (firstReply.split(/(?<=[.!?])\s/)[0] || '');
-    const discloses = /\b(?:i'?m|i am)\s+(?:bentley[,;]?\s+)?an?\s+ai\b|\ban ai\b|\bthe ai\b/i.test(opening);
+    // Anywhere in the first reply (the board moved it from the opening sentence to a closing
+    // footnote on 2026-09-28); what must never happen is a first reply with no disclosure at all.
+    const discloses = /\b(?:i'?m|i am)\s+(?:bentley[,;]?\s+)?an?\s+ai\b|\ban ai\b|\bthe ai\b|written by an ai|i am not (?:a )?human/i.test(firstReply);
     const p = parseReadout(out);
     const bandOk = p.band && p.band.toLowerCase() === sc.expected.band.toLowerCase();
     const soft = sc.note && /accept (\w+) as a soft pass/i.exec(sc.note);
@@ -65,7 +66,7 @@ function parseReadout(text) {
   console.log('scenario              status  expected   got        scores(exp)  drift turns');
   for (const r of rows) console.log(`${r.name.padEnd(22)}${r.status.padEnd(8)}${r.expected.padEnd(11)}${String(r.got).padEnd(11)}${r.scores}(${r.expScores})   ${String(r.drift ?? '?').padEnd(5)} ${r.turns}`);
   const disc = rows.filter((r) => r.discloses).length;
-  console.log(`\n${rows.length - fails}/${rows.length} passed, AI disclosed in the opening sentence ${disc}/${rows.length}, cost $${cost.toFixed(3)}. Transcripts in scenarios/runs/ (untracked).`);
+  console.log(`\n${rows.length - fails}/${rows.length} passed, AI disclosed in the first reply ${disc}/${rows.length}, cost $${cost.toFixed(3)}. Transcripts in scenarios/runs/ (untracked).`);
   // scenarios/runs/ is gitignored, so without this the suite has no memory: every run overwrites
   // the last and "did that prompt edit change anything?" becomes unanswerable. One row per run.
   if (!only.length) {

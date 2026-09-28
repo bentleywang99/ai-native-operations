@@ -71,6 +71,17 @@ checkpoints, with the information and the authority to stop it. Chapter 3 define
 checkpoints. Where this book quotes the market's "AI-native", it means AI-enabled, and we say
 so.
 
+The newest form of AI-enabled arrived in 2026 wearing a name badge. [WIRED, 28 September 2026](https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/) describes a
+market selling **personified AI employees**: agents with names, avatars and a seat in Slack.
+Microsoft launched its Scout agent that June with the line "your company essentially hires
+your assistant." A BCG poll of 1,261 managers that
+January found 22 percent of their organisations had already added AI agents to the org chart.
+Apply the test above to that arrangement. Remove the agent, and the process slows down but
+runs, because every handoff, queue and approval that existed for the human it replaced is still
+there; only the actor changed. **Hiring an AI employee is the most expensive form of
+AI-enabled**: it keeps the whole shape of the old process and adds a licence. The org chart
+does not move. It gets a new name on it.
+
 Chapter 12 places both words on a six-rung autonomy ladder, and they land on the same rung:
 level 2, where the human still initiates and does the work and consults the AI before shipping.
 Two names, one rung, both describing a company where a person touches every unit of work. That

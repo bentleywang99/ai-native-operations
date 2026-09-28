@@ -69,6 +69,18 @@ person who held it changes roles. The written form we use has five fields.
 The last row is the one people forget, and it is the one that decides whether your process
 survives a vacation.
 
+## An unplaced checkpoint, in the wild
+
+[WIRED, 28 September 2026](https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/) reports an agent named "Bob", serving as chief of staff to the CEO of Pronto Housing,
+that "errantly listed all the details of [her] calendar in a Slack channel." Read it with the
+three questions above. Reversibility: a calendar posted to a channel cannot be un-seen. Blast
+radius: everyone in the channel. Novelty: a chief-of-staff agent with broad access and no
+defined trigger for when a person should see an output before it posts. That is a process with
+an approval checkpoint missing exactly where consequences were, and a sampling checkpoint that
+would have caught it on the first day. The CEO's own account is that she corrected the agent
+bluntly and moved on, which is the right instinct and the wrong layer: the fix is in the
+checkpoint table, not in the feedback.
+
 ## The trap
 
 Every checkpoint you add costs human attention, which is the scarce resource you redesigned the

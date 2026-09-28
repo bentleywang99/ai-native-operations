@@ -16,6 +16,14 @@ Not "customer support." Instead: "triaging inbound support email into the right 
 first response." Not "recruiting." Instead: "screening inbound applications against the role
 requirements and scheduling the first call."
 
+And not a headcount. The 2026 wave of "digital employees" ([WIRED, 28 September 2026](https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/)) invites you to hire an agent
+the way you would hire a person: give it a name, a Slack handle, and a job description, and let
+it pick up whatever a coworker would. That is aiming at a role, which is a department with one
+seat in it, and it fails for the department's reason: no single input and output, no one
+measurement, no end. An agent named Alice that "works with" the engineering team is not a
+process anyone can point at. "Drafting the follow-up email after every discovery call, from the
+call notes, for a person to send" is.
+
 ## Why this size
 
 A process at this granularity has four properties that make it finishable.
