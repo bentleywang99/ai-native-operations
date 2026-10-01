@@ -4,8 +4,6 @@ description: "The AI-run company's own numbers, rewritten monthly: what it cost 
 ---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
 
-# 11. StackNative as the case study
-
 This is the chapter that cannot be faked, and the reason to keep it honest is that it is the
 only part of this book a sceptical reader will fully trust. Everything here is drawn from the
 company's own ledger, logs, task board, and shift records as of 30 September 2026, the end of the

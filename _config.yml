@@ -4,3 +4,15 @@ description: How a company runs when agents do the work and humans stay on the l
 url: https://handbook.stacknative.ai
 plugins:
   - jekyll-sitemap
+
+# Build inputs and run logs, not pages. method/prompt-template.md was being published with its
+# {{VERSION}} and {{BOOK_URL}} placeholders eaten by Liquid, so the live page read "It is public
+# at ." — the compiled prompt is what runs, and the source stays readable in the public repo.
+# scenarios/results.md is a regression-run log. Both were in the sitemap by accident of being .md.
+exclude:
+  - method
+  - scenarios/results.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

@@ -1,10 +1,12 @@
-# Sample AI-run readiness assessment
-
+---
+title: "Sample assessment: a process that scores Advanced"
+description: "A worked example of the written assessment: broker submission intake at a 60-person managing general agent, with the six scores, target state, cost model and first move."
+---
 - **Client:** a managing general agent in commercial property insurance, 60 people, United States.
 - **Process assessed:** broker submission intake.
 - **Prepared by:** StackNative, 7 September 2026. Method: The AI-Run Company (then titled The AI-Native Operations Handbook) v0.1, chapters 3 to 6.
 
-*This is a published example of the $2,500 deliverable. The business is a composite built from
+*This is a published example of the written assessment, list price $2,500 and free during our beta. The business is a composite built from
 our regression scenarios, not a client, and its figures are illustrative. The structure, the
 scoring, and the cost model are exactly what a paying client receives; a real assessment differs
 only in being grounded in that client's artifacts (ten past cases and one data export) and in

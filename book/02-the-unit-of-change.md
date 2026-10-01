@@ -1,6 +1,8 @@
+---
+title: "Chapter 2: The unit of change is a process, not a department"
+description: "AI initiatives die from being aimed at something too big to finish. The unit of change is one process: one owner, a countable unit, an observable failure."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 2. The unit of change is a process, not a department
 
 The most common way an AI initiative dies is being aimed at something too big to finish.
 

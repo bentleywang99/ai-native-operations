@@ -1,6 +1,8 @@
+---
+title: "Chapter 12: The autonomy ladder, six rungs and which one you are on"
+description: "From human-run to AI-only, with the test for each rung. Level 5 is for processes, not companies, and the pitch is the right rung rather than the highest."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 12. The autonomy ladder: six rungs, and which one you are on
 
 Clients ask for a maturity model by name. This chapter is ours. It is built on the six levels
 of agentic autonomy that Marty Chang set out in *I was wrong* (agent2026.substack.com, 2026),

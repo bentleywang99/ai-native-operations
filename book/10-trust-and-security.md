@@ -1,6 +1,8 @@
+---
+title: "Chapter 10: Trust, security, and the untrusted input problem"
+description: "When agents do the work, every text entering the system is a potential instruction. Classify with code, quote as data, separate capabilities, cap the meter."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 10. Trust, security, and the untrusted input problem
 
 When agents do the work, every piece of text that enters the system is a potential instruction.
 An email, a contact form, a document a client uploads, a web page the agent reads: each can say

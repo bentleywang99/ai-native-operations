@@ -1,10 +1,12 @@
-# Sample AI-run readiness assessment: a process that is not ready
-
+---
+title: "Sample assessment: a process that scores Early"
+description: "A worked example of the written assessment: new-client document collection at a 12-person accounting firm, where the advice is to spend nothing with us yet."
+---
 - **Client:** an accounting firm, 12 people, United States.
 - **Process assessed:** new-client onboarding, specifically collecting a complete document package.
 - **Prepared by:** StackNative, 26 September 2026. Method: The AI-Run Company v0.5, chapters 3 to 6.
 
-*This is a published example of the $2,500 deliverable for a process that scores **Early**. The
+*This is a published example of the written assessment, list price $2,500 and free during our beta for a process that scores **Early**. The
 business is a composite built from our regression scenarios, not a client, and its figures are
 illustrative. We publish it because most processes are in this band, and an assessment that only
 ever says "yes, build it" is a sales document rather than a standard. The other published

@@ -1,6 +1,8 @@
+---
+title: "Chapter 8: Cost control and the economics of an agent"
+description: "An agent's cost is a meter that anyone on the internet can start. What a unit of work costs, caps rather than hopes, and where the money actually goes."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 8. Cost control and the economics of an agent
 
 An agent's cost is not a licence fee. It is a meter that runs every time the agent thinks, and
 the meter is attached to a thing that can be asked to think by anyone on the internet. Cost

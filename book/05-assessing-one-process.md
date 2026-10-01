@@ -1,6 +1,8 @@
+---
+title: "Chapter 5: Assessing one process"
+description: "The written review of one named process, built to be defensible six months later: what we deliver, how the evidence is gathered, and what the free read-out cannot do."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 5. Assessing one process
 
 The assessment is a written review of one named process. Its job is to be defensible six months
 later, when someone asks why we said what we said. Everything in this chapter serves that: the

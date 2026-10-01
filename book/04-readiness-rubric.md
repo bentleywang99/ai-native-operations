@@ -1,6 +1,8 @@
+---
+title: "Chapter 4: The readiness rubric"
+description: "Six preconditions scored 0 to 2, with anchors and capping rules, producing one of three verdicts: Early, Ready or Advanced. The standard our assessments are judged against."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 4. The readiness rubric
 
 This chapter is the standard. When StackNative's consultant tells someone their process is
 Early, Ready, or Advanced, it means exactly what is written here and nothing else. The verdict

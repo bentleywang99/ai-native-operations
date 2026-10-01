@@ -1,6 +1,8 @@
+---
+title: "Chapter 6: Designing the target state"
+description: "The redesigned process: which steps agents do, where the checkpoints sit, and what gets measured. Five rules, a worked example, and two failure patterns."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 6. Designing the target state
 
 The target state is the redesigned process: which steps agents do, where the checkpoints sit,
 and what gets measured. It is the part of an assessment a client will argue with, and it should

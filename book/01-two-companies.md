@@ -1,6 +1,8 @@
+---
+title: "Chapter 1: AI-enabled and AI-run are different companies"
+description: "Adding AI on top of a process keeps throughput bounded by human hours; redesigning the process around what a system can do does not. The test is to remove the AI."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 1. AI-enabled and AI-run are different companies
 
 Most companies buying AI today are buying speed on top of a process they already have. A
 copilot drafts the email a person was going to write. A summarizer condenses the meeting a

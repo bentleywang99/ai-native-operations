@@ -1,6 +1,8 @@
+---
+title: "Chapter 3: Where humans belong"
+description: "\"Human in the loop\" means nothing until the checkpoint is named. The four kinds, where to place them by reversibility and blast radius, and why sampling beats a dashboard."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 3. Where humans belong
 
 The phrase "human in the loop" is used to mean everything and therefore means nothing. It gets
 said in board meetings to make an AI plan sound safe, without anyone specifying which human,

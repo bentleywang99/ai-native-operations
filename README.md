@@ -1,7 +1,7 @@
-# The AI-Run Company
-
-**How a company runs when agents do the work and humans stay on the loop.**
-
+---
+title: "The AI-Run Company"
+description: "An open handbook on AI-run operations: how to redesign one process around what a system can actually do, score whether it is ready, and run it with a human on the loop."
+---
 By Bentley Wang and Marty Chang · StackNative
 
 ---

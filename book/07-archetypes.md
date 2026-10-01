@@ -1,6 +1,8 @@
+---
+title: "Chapter 7: Process archetypes and their redesigns"
+description: "Six shapes cover most processes worth redesigning: triage, extract, draft, research, monitor, reconcile. The slow part is usually the handoff between two of them."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 7. Process archetypes and their redesigns
 
 Most business processes that are worth redesigning are one of six shapes, or two or three of
 them in sequence. Naming the shapes does two things. It gives the assessment a vocabulary the

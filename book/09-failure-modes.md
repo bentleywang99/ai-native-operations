@@ -1,6 +1,8 @@
+---
+title: "Chapter 9: Failure modes"
+description: "Eleven ways an AI-run process fails, each with its shape, our own instance of it, and the design that prevents it. Silent degradation first, because it fires no alarm."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
-
-# 9. Failure modes
 
 This is a catalogue of the ways an AI-run process fails, written from our own incidents in
 the first week of running one rather than from imagination. Each entry has the shape of the
