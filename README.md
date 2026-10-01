@@ -1,4 +1,5 @@
 ---
+permalink: /
 title: "The AI-Run Company"
 description: "An open handbook on AI-run operations: how to redesign one process around what a system can actually do, score whether it is ready, and run it with a human on the loop."
 ---
