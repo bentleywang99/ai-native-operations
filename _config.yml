@@ -11,6 +11,7 @@ plugins:
 # scenarios/results.md is a regression-run log. Both were in the sitemap by accident of being .md.
 exclude:
   - method
+  - ops
   - scenarios/results.md
   - Gemfile
   - Gemfile.lock
