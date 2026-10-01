@@ -5,7 +5,7 @@
 This is the chapter that cannot be faked, and the reason to keep it honest is that it is the
 only part of this book a sceptical reader will fully trust. Everything here is drawn from the
 company's own ledger, logs, task board, and shift records as of 9 September 2026, the eighth day
-of operation. Where a number is small or embarrassing it is printed anyway. The chapter is
+of operation, except in the three places where a later date is printed beside the material. Where a number is small or embarrassing it is printed anyway. The chapter is
 rewritten at each monthly review and the previous versions stay in the repository history.
 
 ## What the company is
@@ -124,13 +124,19 @@ Each of these is also an entry in Chapter 9; here they carry their dates.
   it left research agents running in the background and then hit the limit while waiting for
   them. In every case the work was on disk and the report was not; the fix each time was in the
   host, not the agent.
+- **28 September, forty-nine letters nobody had read.** Three weeks of outbound sales email went
+  out on a template whose opening sentence announced that the sender was an AI, explained our
+  method before the reader had a problem it answered, and told a stranger what their own
+  bottleneck was. Every operational signal was healthy throughout. The first person to read one
+  of the letters condemned it, which is the whole case for Chapter 3's sampling checkpoint; the
+  dates are under "Where we sit on our own ladder" below.
 
 The pattern is the one Chapter 9 ends on. None of these was the model being wrong. All of them
 were the system being silent, and the repair was always to make the silence impossible.
 
 ## What is still unproven
 
-As of version 0.2: no revenue, no delivered assessment, no pilot, no reply to any sales message,
+As of 30 September 2026: no revenue, no delivered assessment, no pilot, no reply to any sales message,
 and no signup that was not us. The readiness rubric in Chapter 4 has been tested against eight
 fictional businesses and zero real ones. The archetypes in Chapter 7 are drawn from reasoning and
 from the failures above, not from a book of cases.
@@ -147,13 +153,50 @@ its own; the one human on the board reviews periodically, holds payment authorit
 anything binding. We do not intend to climb, because level 5 is the rung where nobody is
 looking, not the rung where the work is better.
 
-Applying the ladder honestly also found a process at level 5: outbound sales email. As of that
-date the human had inspected none of the messages sent and had declined to review the template
-three times, so the process ran at level 5, AI-only on content and on configuration, with deterministic
-stop rules as its only safety net. From the week of 28 September the weekly report carries three
-messages that actually went out, for the human's eyes and nothing else. Whether they are read
-will be recorded here. If they are not, our own outreach runs AI-only by choice, and this
-chapter will say so rather than pretend a checkpoint existed.
+Applying the ladder honestly also found a process at level 5: outbound sales email. On 22
+September the human had inspected none of the messages sent and had declined to review the
+template three times, so the process ran AI-only on content and on configuration, with
+deterministic stop rules as its only safety net. Chapter 12 promised that this chapter would
+record whether the sampled messages were read. They were, and what followed is the strongest
+evidence in this book, because it happened to us and it did not happen in a straight line.
+
+| Dates | Rung | What changed |
+|---|---|---|
+| 8 to 22 September | 5, AI-only | Nobody had read a sent message. Deterministic stop rules were the only safety net. |
+| 22 September | 4, AI-run | Three real sent messages went into each Monday report, for one person's eyes and nothing else. |
+| 28 September | 3, AI-first | That sample condemned the template. Sending stopped and the board read every draft before any of them went out. |
+| 30 September | 4, AI-run | The rewritten template cleared. The board read one draft of eighteen and stepped back to sampling. |
+
+Three things in that table are worth more than any number above it.
+
+**The sampling checkpoint is what found the fault.** It was added on 22 September almost as a
+gesture: paste three letters into a weekly report and hope someone glances at them. It caught the
+template the very first week it was honoured. For three weeks before that, the metrics had said
+the same thing in larger numbers — by 28 September, "0 replies from 49 first messages" — which is a
+result with no cause attached, and every operational reading was green: mail accepted, two bounces
+in three weeks, no stop rule tripped. One human read three of the actual letters and returned six
+comments. That is the argument of Chapter 3 — monitoring is not sampling — run on ourselves, with
+the dashboard losing.
+
+**The ratchet works in both directions, and the way back up is evidence, not elapsed time.**
+Chapter 12 says a process drops a rung after an incident and earns it back when the sampling has
+been boring for long enough. Ours came back up in two days on a single reviewed draft out of
+eighteen. That was defensible only because the fault was a template, which is one artefact and
+replaceable in an afternoon. Had the fault been judgment rather than wording, two days would have
+been far too fast, and the honest version of the rule is that what earns a rung back is a
+demonstration that the specific cause is gone.
+
+**The disclosure footer was briefly false, and the rule is now written down.** Our outreach signs
+off by saying the message was read, judged and sent with no human in the loop. That was not true
+from 28 to 30 September, while every draft was being reviewed. Nothing carrying that footer
+shipped inside the window — the queue was held, and the first two messages went out on 30
+September after the board cleared them — but the near-miss is the lesson, not the escape. A
+disclosure of this kind describes a rung, so it expires the moment the rung changes. The standing
+rule, recorded here because a rule that is not written down does not exist: whenever the board
+reviews drafts, the footer comes out of the template, and it goes back in only when he steps back
+to sampling. Weekly sampling does not contradict the footer, because sampling is on the loop and
+not in it, and that distinction is exactly what separates level 4 from level 5 in Chapter 12.
+Reviewing every draft before it sends is in the loop, and no footer survives it.
 
 ## How to read this chapter next month
 

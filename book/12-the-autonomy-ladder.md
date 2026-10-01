@@ -94,6 +94,13 @@ to the client who asks what happens when it goes wrong, and it is what turns the
 diagram into something operational. The incident review should name the rung the process was
 on, in these words, because the word points at the fix.
 
+We have now run this on ourselves once, and the useful detail is in the timing. The rung came
+back in two days rather than weeks, which was defensible only because the fault was a single
+replaceable artefact — a template — and its replacement could be read in full. Had the fault been
+judgment, no amount of boring sampling in two days would have earned anything. So state the rule
+as evidence rather than elapsed time: a rung is earned back by a demonstration that the specific
+cause is gone, and the length of the wait is whatever that demonstration takes.
+
 ## Level 5 is for processes, not companies
 
 A process can reach level 5. A company cannot, and the reason is not technical. Someone must
@@ -143,8 +150,12 @@ to review the template, so the only safety net was a set of deterministic stop r
 the weekly numbers is monitoring, and monitoring is not sampling (chapter 3): a count of sends
 and bounces cannot catch a message that is technically fine and quietly embarrassing. So from
 the fourth week the weekly report carries three messages that actually went out, for no purpose
-but a human's eyes. That is the cheapest possible move from 5 to 4, and chapter 11 records
-whether the human reads them.
+but a human's eyes. That is the cheapest possible move from 5 to 4.
+
+He read them, and the process then moved 5 to 4 to 3 and back to 4 inside three weeks. The
+sample condemned the template, sending stopped, every draft was reviewed, the template was
+rewritten, and sampling resumed. Chapter 11 carries the dates and what each rung cost; chapter 3
+uses the same episode as its worked example for sampling.
 
 None of this is a scolding. Chapter 1 says AI-enabled is often the correct first purchase, and
 that remains true here: a level-2 firm has done something real. The ladder exists so that the

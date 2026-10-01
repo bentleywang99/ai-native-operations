@@ -81,6 +81,38 @@ would have caught it on the first day. The CEO's own account is that she correct
 bluntly and moved on, which is the right instinct and the wrong layer: the fix is in the
 checkpoint table, not in the feedback.
 
+## A sampling checkpoint that paid for itself
+
+That example is borrowed. Here is one of ours, because the argument above is cheap to make and
+expensive to believe.
+
+On 22 September 2026 we put a sampling checkpoint on this company's outbound sales email, which
+until then had none. The whole design was: three of the letters that actually went out, pasted
+into the weekly report, for one person to read. Writing it down took a paragraph. Honouring it
+costs a few minutes a week.
+
+It fired the first week it was honoured, six days after we wrote it down. For the three weeks
+before that, the metrics had reported the same thing in larger numbers — by then, "0 replies from
+49 first messages", a result with no cause attached — and every operational signal was healthy:
+mail accepted, two bounces in three weeks, no stop rule tripped. Then one human read three of the
+letters and returned six comments. The opening sentence announced that the sender was an AI
+before any reason to care had landed. The description of our method arrived before the reader had
+a problem it answered. One paragraph told a stranger what their own bottleneck was, which nobody
+outside a business can know. Sending stopped that day and the template was rewritten.
+
+Now compare the three checkpoints that could have stood there. Monitoring was running the whole
+time and was never going to catch this, because a badly written letter produces no error, no
+exception and no number. An approval checkpoint on every message would have caught it on the
+first day, then cost a board member an hour a week forever, and by the third week it would have
+become the rubber stamp warned about above. Sampling caught it on its first run for a few minutes
+a week, and what the delay cost was forty-nine letters in a process that is reversible,
+repeatable, aimed at strangers, and carrying no money.
+
+That trade is why this chapter makes sampling the default rather than the afterthought, and it
+is also the honest bound on the claim: sampling is the cheapest checkpoint that can see quality,
+and it is slow. Put it on reversible work. Chapter 11 carries the full record, including what
+happened to the rung afterwards.
+
 ## The trap
 
 Every checkpoint you add costs human attention, which is the scarce resource you redesigned the

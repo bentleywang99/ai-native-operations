@@ -15,7 +15,11 @@ source that changed format: the process keeps producing, and what it produces is
 each week.
 
 **Our case.** The consulting read-out's scores moved by a point per dimension between runs
-before we had any way to see it. Nothing was broken; the verdicts were merely inconsistent.
+before we had any way to see it. Nothing was broken; the verdicts were merely inconsistent. The
+sharper instance is our own outbound sales email, which ran for three weeks on a template that
+was wrong in three separate ways while every signal we watched stayed healthy. It was not drift;
+it was never right. Degradation and a bad start look identical from a dashboard, because both
+produce output and neither produces an error.
 
 **Design.** A regression set with expected outcomes, run before every change and on a schedule.
 Ours is eight fictional businesses with expected readiness bands; a change that flips a band
