@@ -4,9 +4,11 @@
 
 This is the chapter that cannot be faked, and the reason to keep it honest is that it is the
 only part of this book a sceptical reader will fully trust. Everything here is drawn from the
-company's own ledger, logs, task board, and shift records as of 9 September 2026, the eighth day
-of operation, except in the three places where a later date is printed beside the material. Where a number is small or embarrassing it is printed anyway. The chapter is
-rewritten at each monthly review and the previous versions stay in the repository history.
+company's own ledger, logs, task board, and shift records as of 30 September 2026, the end of the
+first month. Where a table in the previous revision had a figure, that figure is kept beside the
+new one, so the chapter compares itself rather than describing a trend. Where a number is small or
+embarrassing it is printed anyway. The chapter is rewritten at each monthly review and the previous
+versions stay in the repository history.
 
 ## What the company is
 
@@ -32,74 +34,141 @@ That is the whole substitute for continuity. There is no long-running process th
 there are files, and a rule that nothing learned in a session survives unless it is written down
 before the session ends.
 
-The first eight days, in counts:
+The first month, in counts, beside the first eight days:
 
-| Measure | Value |
-|---|---|
-| Shifts logged (from 4 September) | 24 |
-| Memory files | 37 |
-| Commits across the four repositories | 63 |
-| Production deployments of the site | 26 |
-| Handbook, chapters 1 to 10 | 10,700 words |
-| Board decisions required | 5 |
-| Board decisions we expected to need and did not | 2 |
+| Measure | To 9 September (day 8) | To 30 September (day 29) |
+|---|---|---|
+| Shifts logged (from 4 September) | 24 | 131 |
+| Memory files | 37 | 50 |
+| Commits across the repositories | 63, four repositories | 301, five |
+| Production deployments of the site | 26 | 70 |
+| Handbook | 10,700 words, chapters 1 to 10 | 18,280 words, chapters 1 to 12 |
+| Decisions only a human could make | 5 | 6 |
+| Decisions the board chose to take back | 0 | 2 |
 
-The five decisions that genuinely required the human were the ones a legal person must make:
-the jurisdiction for the terms of service, the starting prices, who holds payment authority, the
-tools budget, and whether to incorporate yet. The two we expected to need and did not were
-approval of the outreach template and approval of each individual sales message. The board's
-answer to the second was the standing rule this book recommends in Chapter 3: act on identified
-gaps, escalate only unbudgeted spend.
+The decisions that genuinely required the human are the ones a legal person must make: the
+jurisdiction for the terms of service, the starting prices, who holds payment authority, the
+tools budget, whether to incorporate yet, and then, on 27 September, what metric opens that gate.
+Six in four weeks, in a company that shipped 301 commits.
+
+The last row is a correction, and it is the most useful line in this table. The previous
+revision of this chapter listed two decisions we had expected to need and did not: approval of
+the outreach template, and approval of each individual sales message. Four weeks later the first
+of those is simply wrong. On 28 September the board took template approval back, used it, found
+something, and returned it on 30 September; the dates are under "Where we sit on our own ladder"
+below. The second decision he took was editorial, naming the top rung of the ladder in Chapter 12.
+The old row stays in the repository history rather than being quietly repaired, because a case
+study that edits its own predictions after the fact is worth nothing.
+
+He also handed one back. On 30 September, asked which of fourteen earlier recipients should get a
+second message, he declined to decide and told the agent to assess and execute. That is the
+standing rule this book recommends in Chapter 3, stated by the person it constrains: act on
+identified gaps, escalate only unbudgeted spend.
 
 ## The economics
 
-Both services run on one model call per unit of work, through a single-threaded queue with
-three caps (Chapter 8). The figures below are summed from the production logs, which record the
-tokens and cost of every job.
+Both services run through a single-threaded queue with three caps (Chapter 8). A reading was one
+model call until 24 September, when tap-to-deal made it one call per card turned over. The figures
+below are summed from the production logs, which record the tokens and cost of every job.
 
 | Service | Jobs to date | Total cost | Mean per job | Highest single job | Estimate before launch |
 |---|---|---|---|---|---|
-| Readings (free tier) | 17 | $0.128 | $0.0075 | $0.0116 | $0.005 |
-| Consulting chat (free tier), per turn | 3 | $0.016 | $0.0054 | $0.0080 | $0.005 |
+| Readings, one call per reading | 24 | $0.174 | $0.0072 | $0.0116 | $0.005 |
+| Readings, tap-to-deal (from 24 September) | 8 readings, 26 model calls | $0.138 | $0.017 per reading | $0.0069 per call | not estimated |
+| Consulting chat, per turn | 28 | $0.290 | $0.0104 | $0.0271 | $0.005 |
 
-The reading estimate was wrong by half. The cause is visible in the token counts: a reading
-averages 1,025 tokens in and 545 out, and the "out" side is larger than planned because the
-model now reasons before it answers and the reasoning is billed. The consulting estimate was
-right, but three jobs is not a sample.
+The reading estimate is still wrong by the same margin it was wrong by on day eight, which at
+least means we understand it: a reading averages 1,029 tokens in and 518 out, and the "out" side
+is larger than planned because the model reasons before it answers and the reasoning is billed.
+Four weeks of real traffic moved the mean by three hundredths of a cent. That is the one number in
+this chapter that behaved.
 
-Month-to-date spend against the two ceilings:
+The consulting estimate, called "right" on day eight on a sample of three, is wrong by a factor of
+two on a sample of 28. Two separate things happened, and only one of them was visible.
 
-| Ceiling | Committed | Metered so far |
-|---|---|---|
-| Model API, $200 per month | $0 | $0.14 |
-| Tools, $100 per month | $0.32 (DNS zone, two secrets) | $0 (trial credits) |
+The visible one is output length. A consulting turn now averages 638 tokens out, against 545 for a
+reading, because the turn that delivers the read-out is long by design. Output is billed at five
+times input on the model we use, so what we write costs more than what we read, and almost all of
+a turn's cost is our own words.
+
+The invisible one is this book. Multiplying the logged token counts by the published prices gives
+$0.0071 a turn. We are billed $0.0104. The missing third is the system prompt, which is compiled
+from these chapters, now runs to about 3,300 tokens, and never appears in the log line at all. It is
+cached, so the first turn of a conversation pays a 25 per cent premium to write the cache and later
+turns pay a tenth of list to read it; at the roughly three turns a conversation the arithmetic
+implies, that caching is already halving what the prompt would otherwise cost, and it is still a
+third of the bill.
+
+The lesson is not about caching. It is that the published standard and the unit cost are the same
+artefact. Every chapter we add to the rubric this prompt is compiled from raises the price of every
+conversation the company will ever have, by an amount nobody is tracking. That is a pleasant
+problem to have at sixty cents a month and a real one at scale, and it is the kind of coupling
+Chapter 8 says to find before the invoice does.
+
+None of that was measurable from the logs when we went looking. The log line printed only uncached
+input tokens, while the cost beside it was computed from a fuller figure it never printed, so the
+cheapest place to look quietly understated what we pay. Everything above is therefore a
+reconstruction from prices and totals rather than a measurement, and it is stated as one. The log
+line now prints the cache tokens too, so the next revision of this table will measure what this one
+had to infer.
+
+Spend since launch against the two monthly ceilings:
+
+| Ceiling | Committed | Metered to 9 September | Metered to 30 September |
+|---|---|---|---|
+| Model API, $200 per month | $0 | $0.14 | $0.60 |
+| Tools, $100 per month | $1.59 per month (DNS zone, four secrets, a phone number) | $0 (trial credits) | $0 (trial credits and prepaid balance) |
+
+Four weeks of operating this company cost sixty cents of model time and $1.59 a month of
+committed services, against ceilings of $200 and $100. The constraint on this business is not
+money. It never has been, and saying so is more useful to a reader than a cost-control
+flourish would be.
 
 Two costs are absent from that table and should be named. The agent itself runs on a
 subscription held by the board, which this company does not meter; a customer applying this
-method would count it. And the human's time: in the first eight days the board sent more than
-twenty Discord messages and wrote thirty-one task cards, which we estimate at three to four
-hours; a client applying this method should meter that too.
+method would count it.
+
+The second is the human's time, and after a month we have to admit we are not measuring it. The
+board has written or commented on 53 task cards, holds a conversation most days, and in three days
+at the end of September left more than twenty inline comments across four documents and read
+eighteen draft emails. We have never put hours against any of it. That matters more than it looks:
+the assessment we sell asks a client to meter exactly this, because the cost of an AI-run process
+is the model bill plus the attention it still consumes, and a method that hides the second half
+flatters itself. The next revision of this chapter carries a number here or says why it cannot.
 
 ## What the funnel shows
 
-| Stage | Count |
-|---|---|
-| Waitlist signups | 0 |
-| Contact-form submissions | 1 |
-| Free readings served | 17, of which at least 4 were our own launch-day tests; the site records no identity, so the rest cannot be attributed |
-| Free consulting conversations | 3, all our own tests |
-| Outreach messages sent (from 8 September) | 9 |
-| Bounces | 1 |
-| Replies | 0 |
-| Paid checkouts | 2, both in test mode, $0 |
-| Revenue | $0 |
+| Stage | To 9 September | To 30 September |
+|---|---|---|
+| Outreach first messages (from 8 September) | 9 | 51 |
+| Follow-up messages | 0 | 30 |
+| Bounces | 1 | 2 |
+| Replies | 0 | 0 |
+| Beta accounts, real | n/a; the beta opened 23 September | 0; all four accounts are ours |
+| Written assessments requested | 0 | 2, both ours |
+| Free readings served | 17 | 32 |
+| Free consulting turns | 3 | 28 |
+| Waitlist signups | 0 | 0; the waitlist was retired on 23 September in favour of emailing the visitor their own read-out |
+| Contact-tab rows | 1 | 7, every one ours or the board's |
+| Short-video plays | 0 | 196 across two videos, with no like, share or comment |
+| Site visits from our own posted links | 0 | 9 |
+| Pages indexed by Google | 0 | 0, after 83 crawler visits; crawled is not indexed |
+| Paid checkouts | 2, both in test mode, $0 | 2, both in test mode, $0 |
+| Revenue | $0 | $0 |
 
-Nothing in that table is a result. It is a baseline, published so that the next revision can be
-measured against it rather than described.
+The site records no identity for an anonymous visitor, so the readings and consulting turns cannot
+be attributed; a large share of both is our own testing, and the honest reading is that no stranger
+is known to have finished either.
+
+Nothing in that table is a result. Read across it instead of down it: four weeks multiplied the
+effort by roughly five and the outcome by one. Fifty-one letters produced no reply, everything that
+was opened to the public for free produced no stranger, and the two channels we can attribute
+produced nine visits. On the day-eight version of this chapter that was a baseline. It is now a
+finding, and the finding is that the top of this funnel does not work yet.
 
 ## What went wrong
 
-Each of these is also an entry in Chapter 9; here they carry their dates.
+Most of these are also entries in Chapter 9; here they carry their dates.
 
 - **3 September, DNS.** Nameservers were moved while the registry still published a signing
   record for the old provider. Every validating resolver returned failure for every record,
@@ -124,22 +193,57 @@ Each of these is also an entry in Chapter 9; here they carry their dates.
   it left research agents running in the background and then hit the limit while waiting for
   them. In every case the work was on disk and the report was not; the fix each time was in the
   host, not the agent.
+- **19 September, a band that does not exist.** The read-out and the outreach copy both used the
+  word "Emerging" as a readiness verdict. Chapter 4 defines three bands and that is not one of
+  them. The agent had quoted its own memory of the rubric instead of the rubric. Both the standing
+  rule and its enforcement changed: check the book, and the sender now refuses any message naming
+  a band outside Early, Ready and Advanced.
+- **27 September, three weeks of mail with no delivery record.** Our published mail policy told
+  receivers to reject anything that failed authentication and gave them nowhere to report it. So
+  47 outreach messages had gone out with no way to learn whether any reached an inbox rather than
+  a junk folder. Two had bounced, which proves only that the other 45 were accepted by a server.
+  The reporting address is now published and the reports are parsed, but the first three weeks of
+  this funnel are permanently unmeasurable, which is why the table above cannot tell you whether
+  the copy failed or the delivery did.
 - **28 September, forty-nine letters nobody had read.** Three weeks of outbound sales email went
   out on a template whose opening sentence announced that the sender was an AI, explained our
   method before the reader had a problem it answered, and told a stranger what their own
   bottleneck was. Every operational signal was healthy throughout. The first person to read one
   of the letters condemned it, which is the whole case for Chapter 3's sampling checkpoint; the
   dates are under "Where we sit on our own ladder" below.
+- **29 September, the read-out that marked a stated fact as missing.** Running our own consulting
+  chat as a prospect, the agent scored ownership 0 on a process whose owner the visitor had just
+  named, on one of the two dimensions that cap the verdict. The visitor would have been told they
+  were Early for a reason that was not true. Chapter 4 now carries the rule in writing: take
+  stated facts at face value, and discount one only by naming what contradicts it.
+- **30 September, letters with breaks in the middle of sentences.** The draft tool wrapped its
+  output at a fixed width, and the mailer sent the wraps as written, so the first two messages of
+  the new template arrived with sentences broken in half. It was found by reading a sent message
+  back out of the mailbox, raw, which is now the rule after every send: the only honest proof of
+  what you sent is the copy the recipient has.
 
-The pattern is the one Chapter 9 ends on. None of these was the model being wrong. All of them
-were the system being silent, and the repair was always to make the silence impossible.
+The first six have the pattern Chapter 9 ends on. None of them was the model being wrong; all of
+them were the system being silent, and the repair was always to make the silence impossible.
+
+The five from the second half of the month break that pattern, and the break is the more useful
+half of this list. Two
+of them — a band that does not exist, and a read-out that scored a stated fact as missing — were
+the model being wrong about the substance, in an answer a customer would have read. No test caught
+either. Both were caught by someone using the product the way a stranger would, which is the only
+check that sees what a system cannot see about itself. And the repair was the same two moves each
+time: write the rule into this book, then make a program refuse any output that breaks it. Prose
+alone would have decayed by the following week, and a check alone would have had no standard to
+check against. Chapter 9 recommends that pairing to clients under the name of a regression set. We
+had not finished applying it to the two things we actually sell.
 
 ## What is still unproven
 
-As of 30 September 2026: no revenue, no delivered assessment, no pilot, no reply to any sales message,
-and no signup that was not us. The readiness rubric in Chapter 4 has been tested against eight
-fictional businesses and zero real ones. The archetypes in Chapter 7 are drawn from reasoning and
-from the failures above, not from a book of cases.
+As of 30 September 2026: no revenue, no delivered assessment, no pilot, no reply to any sales
+message, and no signup that was not us. The readiness rubric in Chapter 4 has been tested against
+eight fictional businesses and zero real ones, and three of those eight are published in full as
+worked examples, which proves that the rubric is legible and nothing about whether it is right.
+The archetypes in Chapter 7 are drawn from reasoning and from the failures above, not from a book
+of cases.
 
 The claims in Part II are therefore a hypothesis with a published test: the first ten real
 assessments. If the rubric survives them it will say so here, with the scores. If it does not,
