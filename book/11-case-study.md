@@ -1,3 +1,7 @@
+---
+title: "Chapter 11: StackNative as the case study"
+description: "The AI-run company's own numbers, rewritten monthly: what it cost to run, what the funnel did, every failure with its date, and where it sits on its own autonomy ladder."
+---
 *[The AI-Run Company](https://handbook.stacknative.ai) · contents*
 
 # 11. StackNative as the case study
