@@ -91,13 +91,11 @@ reading, because the turn that delivers the read-out is long by design. Output i
 times input on the model we use, so what we write costs more than what we read, and almost all of
 a turn's cost is our own words.
 
-The invisible one is this book. Multiplying the logged token counts by the published prices gives
-$0.0071 a turn. We are billed $0.0104. The missing third is the system prompt, which is compiled
-from these chapters, now runs to about 3,300 tokens, and never appears in the log line at all. It is
-cached, so the first turn of a conversation pays a 25 per cent premium to write the cache and later
-turns pay a tenth of list to read it; at the roughly three turns a conversation the arithmetic
-implies, that caching is already halving what the prompt would otherwise cost, and it is still a
-third of the bill.
+The invisible one is this book. Multiplying September's logged token counts by the published prices
+gives $0.0071 a turn. We were billed $0.0104. The missing third is the system prompt, which is
+compiled from these chapters and never appeared in the log line at all. It is cached, so the first
+turn of a conversation pays a 25 per cent premium to write the cache and later turns pay a tenth of
+list to read it.
 
 The lesson is not about caching. It is that the published standard and the unit cost are the same
 artefact. Every chapter we add to the rubric this prompt is compiled from raises the price of every
@@ -107,10 +105,23 @@ Chapter 8 says to find before the invoice does.
 
 None of that was measurable from the logs when we went looking. The log line printed only uncached
 input tokens, while the cost beside it was computed from a fuller figure it never printed, so the
-cheapest place to look quietly understated what we pay. Everything above is therefore a
-reconstruction from prices and totals rather than a measurement, and it is stated as one. The log
-line now prints the cache tokens too, so the next revision of this table will measure what this one
-had to infer.
+cheapest place to look quietly understated what we pay. The fix was one line, and it was worth
+printing what the first measured turn said:
+
+```
+[consult] ok in=44 cc=4093 cr=0 out=264 cost=$0.0130
+```
+
+Forty-four tokens of the visitor's question, 4,093 tokens of this book written into the cache, 264
+tokens of answer. The prompt is 79 per cent of what that turn cost, and the visitor's own words are
+well under one per cent of it. Across a whole conversation the share falls, because later turns read
+the cache at a tenth of list instead of writing it at a premium, which is how September's mean came
+out at a third rather than four fifths.
+
+The reconstruction behind that mean was right about the mechanism and low on the size: working
+backwards from prices and totals it put the prompt at about 3,300 tokens, where the measurement says
+4,093. A fifth off, on the largest single component of our only metered cost. That is what inference
+costs, and it is why the log line was changed rather than annotated.
 
 Spend since launch against the two monthly ceilings:
 
