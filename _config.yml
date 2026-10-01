@@ -5,6 +5,12 @@ url: https://handbook.stacknative.ai
 plugins:
   - jekyll-sitemap
 
+# Every link we hand out previewed as bare text: the handbook had no og:image at all.
+# Rendered from tools/browser/og-card.html?v=handbook (viewport 1200x630, crop 1200:630:0:0).
+image: /og.png
+twitter:
+  card: summary_large_image
+
 # Build inputs and run logs, not pages. method/prompt-template.md was being published with its
 # {{VERSION}} and {{BOOK_URL}} placeholders eaten by Liquid, so the live page read "It is public
 # at ." — the compiled prompt is what runs, and the source stays readable in the public repo.
