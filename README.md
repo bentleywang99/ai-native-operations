@@ -54,11 +54,16 @@ our own, including the parts that did not work.
 **Part VI — The Ladder**
 12. [The autonomy ladder: six rungs, and which one you are on](book/12-the-autonomy-ladder.md)
 
+**Appendices**
+
+- A. [What 43 accounting firms publish for their clients](book/appendix-a-document-intake.md) — field evidence for chapters 2, 4 and 7: we read 43 firms' client-facing pages and one publishes a path a client could follow alone.
+
 ## Status
 
-Version 0.7, 1 October 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3; the autonomy
+Version 0.8, 2 October 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3; the autonomy
 ladder added as chapter 12 in 0.4; 0.6 added our own outreach process ratcheting 5 to 4 to 3 to 4, as evidence in chapters 3, 9, 11 and 12;
-0.7 is the first monthly review of chapter 11, with every table carrying its day-eight figure beside the end-of-month one).
+0.7 is the first monthly review of chapter 11, with every table carrying its day-eight figure beside the end-of-month one;
+0.8 adds appendix A, the first field evidence in the book that is not about us).
 All twelve chapters are written; Chapter 11 is rewritten at each monthly review with the company's real numbers.
 
 This is a live document. It will be wrong in places, and the fastest way to find out is to use

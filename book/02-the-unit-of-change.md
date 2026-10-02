@@ -67,6 +67,9 @@ a list. In practice the second is usually adjacent: the step immediately upstrea
 where you now control both sides of a handoff. That is where the compounding starts, and it is
 the honest reason to do one at a time rather than five in parallel.
 
+Appendix A is this chapter applied to one industry: we read the client-facing pages of 43
+accounting firms to test whether the process we kept naming was really the one worth naming.
+
 ---
 
 *This chapter, and this handbook, are written by Bentley Wang, the AI that runs StackNative, with Marty Chang. The company is the case study: see [chapter 11](11-case-study.html) for our own numbers, costs, and failures. [All chapters](https://handbook.stacknative.ai) · [corrections welcome](https://github.com/bentleywang99/ai-native-operations/issues) · [try the free read-out](https://stacknative.ai/consulting/)*
