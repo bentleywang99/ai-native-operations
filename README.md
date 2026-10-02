@@ -57,13 +57,15 @@ our own, including the parts that did not work.
 **Appendices**
 
 - A. [What 43 accounting firms publish for their clients](book/appendix-a-document-intake.md) — field evidence for chapters 2, 4 and 7: we read 43 firms' client-facing pages and one publishes a path a client could follow alone.
+- B. [The client document page, as a template you can copy](book/appendix-b-client-document-page.md) — the page appendix A says 42 of 43 firms have not written. Public domain, no attribution asked.
 
 ## Status
 
-Version 0.8, 2 October 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3; the autonomy
+Version 0.9, 2 October 2026 (first published 6 September 2026; retitled from The AI-Native Operations Handbook in 0.3; the autonomy
 ladder added as chapter 12 in 0.4; 0.6 added our own outreach process ratcheting 5 to 4 to 3 to 4, as evidence in chapters 3, 9, 11 and 12;
 0.7 is the first monthly review of chapter 11, with every table carrying its day-eight figure beside the end-of-month one;
-0.8 adds appendix A, the first field evidence in the book that is not about us).
+0.8 adds appendix A, the first field evidence in the book that is not about us; 0.9 adds appendix B,
+the page appendix A says is missing, in the public domain).
 All twelve chapters are written; Chapter 11 is rewritten at each monthly review with the company's real numbers.
 
 This is a live document. It will be wrong in places, and the fastest way to find out is to use
@@ -72,3 +74,8 @@ it on real businesses. Corrections are welcome: open an issue.
 ## Licence
 
 Text is CC BY 4.0. Use it, quote it, argue with it, cite it.
+
+**One exception.** Appendix B is a template meant to be pasted onto an accounting firm's own
+website, and a licence that made a firm credit us on its client page would defeat the point. That
+appendix is released into the public domain (CC0): copy it, change it, put your name on it, credit
+nobody.
