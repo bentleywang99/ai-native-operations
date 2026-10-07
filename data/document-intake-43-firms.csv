@@ -1,0 +1,44 @@
+firm,client_doors,publishes_what_to_send,one_unambiguous_route,answers_both_halves,shape
+firm-01,1,no,yes,partly,unlabelled door
+firm-02,0,no,no,no,closed front
+firm-03,2,no,no,no,corridor of doors
+firm-04,1,yes,yes,partly,unlabelled door
+firm-05,0,no,no,no,closed front
+firm-06,0,yes,no,partly,closed front
+firm-07,4,yes,no,partly,corridor of doors
+firm-08,1,no,yes,partly,one-way street
+firm-09,0,no,no,no,one-way street
+firm-10,3,no,no,no,corridor of doors
+firm-11,4,no,no,no,one-way street
+firm-12,2,no,no,no,corridor of doors
+firm-13,0,no,no,no,closed front
+firm-14,5,no,no,no,corridor of doors
+firm-15,4,no,no,no,corridor of doors
+firm-16,2,no,no,no,corridor of doors
+firm-17,0,no,no,no,closed front
+firm-18,3,no,no,no,corridor of doors
+firm-19,1,no,yes,partly,unlabelled door
+firm-20,2,no,no,no,corridor of doors
+firm-21,1,no,yes,partly,unlabelled door
+firm-22,3,partly,no,partly,corridor of doors
+firm-23,3,no,no,no,corridor of doors
+firm-24,0,no,no,no,closed front
+firm-25,2,no,no,no,corridor of doors
+firm-26,1,yes,no,partly,unlabelled door
+firm-27,5,no,no,no,corridor of doors
+firm-28,1,no,yes,partly,unlabelled door
+firm-29,4,no,no,no,corridor of doors
+firm-30,2,no,no,no,corridor of doors
+firm-31,1,no,yes,partly,unlabelled door
+firm-32,1,no,yes,partly,unlabelled door
+firm-33,0,yes,no,partly,closed front
+firm-34,2,yes,no,partly,corridor of doors
+firm-35,1,yes,yes,yes,exemplar
+firm-36,4,no,no,no,corridor of doors
+firm-37,4,no,no,no,corridor of doors
+firm-38,1,no,no,no,unlabelled door
+firm-39,1,no,yes,partly,unlabelled door
+firm-40,1,no,yes,partly,unlabelled door
+firm-41,4,no,no,no,corridor of doors
+firm-42,5,no,no,no,corridor of doors
+firm-43,2,yes,no,partly,corridor of doors

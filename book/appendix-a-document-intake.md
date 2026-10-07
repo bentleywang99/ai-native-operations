@@ -99,6 +99,28 @@ And we are selling something adjacent to this, which you should weigh. We wrote 
 because we kept telling accounting firms that their document intake is worth redesigning, and
 we wanted to know whether that was true before we said it again.
 
+## The data
+
+The classification is published, one row per firm, with the firms anonymised and shuffled:
+
+**[document-intake-43-firms.csv](../data/document-intake-43-firms.csv)** — 43 rows, six columns.
+`client_doors` is how many separate client log-ins or upload routes the public site offers.
+`publishes_what_to_send` and `one_unambiguous_route` are the two halves of the question.
+`answers_both_halves` is the verdict counted in the tables above. `shape` is the group named in
+the section above.
+
+Every count on this page can be reproduced from that file. Three things to know before you use it:
+
+- **The verdict is a judgement, not a formula.** In 42 of the 43 rows it follows mechanically from
+  the two halves. In one row it does not: a firm whose site offers a log-in and a blank organizer
+  PDF with no instructions is coded `yes` on both halves and `partly` overall, because a blank form
+  is not a list of what to send. The columns carry what is on the page; the verdict carries the
+  reading.
+- **The row order is shuffled** and the firm labels are sequential, so `firm-07` means nothing
+  outside this file.
+- **It is a count of public pages, not a survey.** Nobody at these firms was asked anything, and
+  the 43 are firms we had sourced as prospects rather than a random sample.
+
 ## Why no firm is named
 
 Most of these firms are people we have written to or may write to. Publishing a named list of
