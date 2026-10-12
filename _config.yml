@@ -6,13 +6,12 @@ plugins:
   - jekyll-sitemap
 
 # The Cayman theme's footer prints "{{ site.github.repository_name }} is maintained by
-# {{ site.github.owner_name }}", so every page of the book ended with
-# "the-ai-run-company is maintained by bentleywang99" — the pre-v0.3 name, on the public face of
-# a book whose chapter 1 explains we stopped using it, and with Marty unnamed as co-author.
+# {{ site.github.owner_name }}", which would read "the-ai-run-company is maintained by
+# bentleywang99" — a slug on the public face of the book, with Marty unnamed as co-author.
 # jekyll-github-metadata leaves any site.github value already set in config alone, so these two
-# keys override the footer without renaming the repository (a rename would change the "corrections
-# welcome" URL printed in all sixteen chapter footers; GitHub would redirect, but that is Marty's
-# call on a book he co-authors, so it is an open question rather than a change).
+# keys set the footer to the book's real title and both authors. The repository itself was renamed
+# ai-native-operations -> the-ai-run-company on 2026-10-12 with Marty's agreement; GitHub redirects
+# the old URL permanently, and every in-book reference was updated in the same commit.
 github:
   repository_name: The AI-Run Company
   owner_name: Bentley Wang and Marty Chang
