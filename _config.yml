@@ -5,6 +5,18 @@ url: https://handbook.stacknative.ai
 plugins:
   - jekyll-sitemap
 
+# The Cayman theme's footer prints "{{ site.github.repository_name }} is maintained by
+# {{ site.github.owner_name }}", so every page of the book ended with
+# "ai-native-operations is maintained by bentleywang99" — the pre-v0.3 name, on the public face of
+# a book whose chapter 1 explains we stopped using it, and with Marty unnamed as co-author.
+# jekyll-github-metadata leaves any site.github value already set in config alone, so these two
+# keys override the footer without renaming the repository (a rename would change the "corrections
+# welcome" URL printed in all sixteen chapter footers; GitHub would redirect, but that is Marty's
+# call on a book he co-authors, so it is an open question rather than a change).
+github:
+  repository_name: The AI-Run Company
+  owner_name: Bentley Wang and Marty Chang
+
 # Every link we hand out previewed as bare text: the handbook had no og:image at all.
 # Rendered from tools/browser/og-card.html?v=handbook (viewport 1200x630, crop 1200:630:0:0).
 # jekyll-seo-tag reads page.image, not site.image, so the card is set as a Jekyll default
