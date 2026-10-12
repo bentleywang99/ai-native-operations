@@ -7,7 +7,7 @@ plugins:
 
 # The Cayman theme's footer prints "{{ site.github.repository_name }} is maintained by
 # {{ site.github.owner_name }}", so every page of the book ended with
-# "ai-native-operations is maintained by bentleywang99" — the pre-v0.3 name, on the public face of
+# "the-ai-run-company is maintained by bentleywang99" — the pre-v0.3 name, on the public face of
 # a book whose chapter 1 explains we stopped using it, and with Marty unnamed as co-author.
 # jekyll-github-metadata leaves any site.github value already set in config alone, so these two
 # keys override the footer without renaming the repository (a rename would change the "corrections
