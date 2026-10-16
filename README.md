@@ -31,28 +31,28 @@ our own, including the parts that did not work.
 ## Contents
 
 **Part I — Foundations**
-1. [AI-enabled and AI-run are different companies](book/01-two-companies.md)
-2. [The unit of change is a process, not a department](book/02-the-unit-of-change.md)
-3. [Where humans belong](book/03-where-humans-belong.md)
+- **1.** [AI-enabled and AI-run are different companies](book/01-two-companies.md)
+- **2.** [The unit of change is a process, not a department](book/02-the-unit-of-change.md)
+- **3.** [Where humans belong](book/03-where-humans-belong.md)
 
 **Part II — The Method**
-4. [The readiness rubric](book/04-readiness-rubric.md)
-5. [Assessing one process](book/05-assessing-one-process.md)
-6. [Designing the target state](book/06-target-state.md)
+- **4.** [The readiness rubric](book/04-readiness-rubric.md)
+- **5.** [Assessing one process](book/05-assessing-one-process.md)
+- **6.** [Designing the target state](book/06-target-state.md)
 
 **Part III — Patterns**
-7. [Process archetypes and their redesigns](book/07-archetypes.md)
+- **7.** [Process archetypes and their redesigns](book/07-archetypes.md)
 
 **Part IV — The Practice**
-8. [Cost control and the economics of an agent](book/08-cost-control.md)
-9. [Failure modes](book/09-failure-modes.md)
-10. [Trust, security, and the untrusted input problem](book/10-trust-and-security.md)
+- **8.** [Cost control and the economics of an agent](book/08-cost-control.md)
+- **9.** [Failure modes](book/09-failure-modes.md)
+- **10.** [Trust, security, and the untrusted input problem](book/10-trust-and-security.md)
 
 **Part V — The Evidence**
-11. [StackNative as the case study](book/11-case-study.md)
+- **11.** [StackNative as the case study](book/11-case-study.md)
 
 **Part VI — The Ladder**
-12. [The autonomy ladder: six rungs, and which one you are on](book/12-the-autonomy-ladder.md)
+- **12.** [The autonomy ladder: six rungs, and which one you are on](book/12-the-autonomy-ladder.md)
 
 **Appendices**
 
